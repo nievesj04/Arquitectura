@@ -1,0 +1,218 @@
+ .carrito_overlay{
+ 	position: fixed;
+ 	top:0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+ 	background-color: rgba(0,0,0,.7);
+ 	visibility: hidden; 
+ 	z-index: 2;
+
+}
+
+.car_shop {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(.5);
+	width: 45%;
+	height: 90%;
+	padding: 1.6rem;
+	border-radius: 2rem;
+	overflow-x: scroll;
+	background-color: #fff; 
+	opacity: 0; 
+	visibility: hidden; 
+
+}
+
+.car_shop h3{
+	font-size: 2.5vh;
+}
+
+.car_shop.show{
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+	visibility: visible;
+}
+
+.carrito_overlay.show{
+	visibility: visible;
+}
+
+.carrito__item img{
+	width: 17vh;
+	margin-right: 20px;
+
+}
+
+.car_shop .close__carrito{
+	font-size: 2rem;
+	cursor: pointer;
+	color: var(--negro);
+	transform: all 300ms ease-in-out;
+}
+
+.car_shop .close__carrito:hover{
+	color: #ee0749;
+}
+
+
+.carrito__item span {
+	font-size: 1rem;
+	color: #434343;
+}
+
+.car_shop h1 {
+	text-align: center;
+	margin-bottom: 2.7rem;
+	color: #2f72c5;
+}
+
+.carrito__item {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 2fr 1fr 1fr;
+	width: 100%;
+	margin-bottom: 15px;
+	background-color: #f9f9f9;
+}
+
+.carrito__item div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.carrito__item div span{
+	cursor: pointer; 
+}
+
+.carrito__item h3{
+	font-weight: 500;
+	margin-bottom: 1.5rem;
+	font-size: 2.4vh;
+}
+
+.carrito__item .price{
+	color: #2672b9;
+	font-weight: 700;
+}
+
+.carrito__item .remove__item {
+	cursor: pointer;
+	color: #ee0749;
+	font-size: 5vh; 
+}
+
+.carrito__item .remove__item:hover {
+	color: #cf194d;
+}
+
+.carrito__footer {
+	text-align: center;
+	margin: 2rem  0 1rem 0;
+}
+
+.carrito__footer .btn{
+	display: inline-block;
+	padding: 1.5vh 3vh;
+	font-size: 2.2vh;
+	background-color: #2f72c5;
+	cursor: pointer;
+	color: #fff;
+	border: none;
+	font-weight: 700;
+	margin-top: 10px;
+}
+
+.carrito__footer .btn:focus{
+	outline: none;
+}
+
+.carrito__footer .btn:hover{
+	background-color: #2b5488;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1080px){
+
+	.carrito {
+		width: 60%;
+		height:80%; 
+
+	}
+
+	.carrito__item{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+}
+
+
+@media only screen and (max-width: 700px){
+
+	.car_shop{
+		width: 100%;
+		height: 100%;
+		border-radius: 0px;
+	}
+
+	.carrito__item{
+		margin: 0 2vh;
+		margin-bottom: 15px;
+
+	}
+
+	.carrito__item h3{
+		font-size: 2.7vh;
+		margin-bottom: 1rem;
+		font-weight: 500;
+	}
+
+	.btn{
+		padding: .8rem 1.5rem;
+		font-size: 1.6rem;
+	}
+
+	.carrito__item img{
+		width: 20vh;
+
+	}
+}
+
+@media only screen and (max-width: 480px){
+
+	.car_shop{
+		width: 100%;
+		height: 100%;
+		border-radius: 0px;
+	}
+
+	.carrito__item{
+		margin: 0 0vh;
+		margin-bottom: 15px;
+
+	}
+
+	.carrito__item h3{
+		font-size: 2.6vh;
+		margin-bottom: 1rem;
+		font-weight: 500;
+	}
+
+	.carrito__item img{
+		width: 17vh;
+	}
+
+	.carrito__item .remove__item{
+		font-size: 4vh;
+	}
+		
+
+}

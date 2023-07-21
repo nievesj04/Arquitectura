@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Arquitectura del Computador</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="carrito.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	</head>
+	<body>
+		<header>
+			<nav class="nav">
+				<div class="logo">ELECTROCLICK</div>
+
+				<ul class="menu" id="menu">
+					<li><a href="#" class="active menu-up">TODOS</a></li>
+					<li><a href="#section-pcs">PC</a></li>
+					<li><a href="#section-laptops">LAPTOPS</a></li>
+					<li><a href="#section-tablets">TABLETS</a></li>
+					<li><a href="#">TRABAJOS</a></li>
+				</ul>
+				<div class="carritoBtn">
+					<button><i class='bx bxs-cart'></i></button>
+				</div>
+				
+				
+			</nav>
+		</header>
+
+
+		<section class="carrito_overlay" id="carrito_overlay">
+			<div class="car_shop" id="car_shop">
+
+				<span class="close__carrito" id="close__carrito">
+					<i class="bx bx-x"></i>
+				</span>
+				<h1>Su Carrito</h1>
+
+				<div class="carrito__center" id="car_table">
+
+					<!-- <div class="carrito__item" id="${code}">
+					 	<img src="${img} " alt="">
+					 	<div>
+					 		<h3 class="h3__carrito">${name}</h3>
+					 		<p class="price">${price}$</p>
+					 	</div>
+					 	<div class="div12">
+					 		<span class="flechaUp" id="flecha__arriba__12">
+					 			<i class="bx bxs-up-arrow" id="flechaUp-${code}"></i>
+					 		</span>
+					 		<p class="cantidad-carrito-${code}">1</p>
+					 		<span class="flechaDown" id="flecha__abajo__12">
+					 			<i class="bx bxs-down-arrow" id="flechaDown-${code}"></i>
+					 		</span>
+					 	</div>
+					 	<div class="remove_car">
+					 		<span class="remove__item" id="remove__item">
+					 			<i class="bx bx-trash" id="eliminar-${code}"></i>
+					 		</span>
+					 	</div>
+					</div> -->
+
+				</div>
+				
+				<div class="carrito__footer">
+					<h3>Total:  <span class="carrito__total">$0</span></h3>
+					<button class="finalizar__compra btn" id="finalizar__compra__total">Finalizar Compra</button>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="section-pcs">
+			<h2 class="titulo-section">COMPUTADORAS</h2>
+			
+			<div class="productos">
+				<div class="item" 
+					data-name="Asus ROG Strix GA15 G15"
+					data-price=1900
+					data-src="img/Productos/PCs/1.jpg"
+					data-code="01"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/PCs/1-1.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$1900</h3>
+							<p><span>/ASUS</span><br>ROG Strix GA15 G15</p>
+							<p class="description">CPU: Intel Core i7-11700F | GPU: Nvidia GeForce RTX 3070 (8GB GDDR6 VRAM) | RAM: 16GB DDR4 | Almacenamiento: 512GB NVMe SSD, 1TB HDD | Peso: 23.2 libras</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="lenovo Legion 5i Tower Gen 7"
+					data-price=1000
+					data-src="img/Productos/PCs/2.jpg"
+					data-code="02"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/PCs/2-2.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$1000</h3>
+							<p><span>/Lenovo</span><br>Legion 5i Tower Gen 7</p>
+							<p class="description">CPU: Intel Core i5-12400 | GPU: Nvidia RTX 3060 | RAM: 16GB DDR5 4,800MHz | Almacenamiento: 256GB PCIe 4.0 SSD, 1TB HDD (7,200RPM) | Peso: 35.27 libras</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="HP Omen 30L Gaming Desktop"
+					data-price=1099
+					data-src="img/Productos/PCs/3.jpg"
+					data-code="03"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/PCs/3-3.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$1099</h3>
+							<p><span>/HP</span><br>Omen 30L Gaming Desktop</p>
+							<p class="description">CPU: AMD Ryzen 5 5600G | GPU: Nvidia RTX 3060 | RAM: 16GB DDR4 (2 x 8GB) | Almacenamiento: 1TB SSD | Peso: 28,35 libras</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="Lenovo Legion Tower 5"
+					data-price="950"
+					data-src="img/Productos/PCs/4.jpg"
+					data-code="04"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/PCs/4-4.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$950</h3>
+							<p><span>/LENOVO</span><br>Legion Tower 5</p>
+							<p class="description">CPU: AMD Ryzen 7 5700G | GPU: Nvidia RTX 3060 | RAM: 16GB DDR4 (2 x 8GB) (3,200MHz) | Almacenamiento: 512GB M.2 PCIe NVMe SSD, 1TB HDD (7,200RPM) | Peso: 30.86 libras</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="CyberPowerPc Gamer Xtreme"
+					data-price="1870"
+					data-src="img/Productos/PCs/5.jpg"
+					data-code="05"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/PCs/5-5.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$1870</h3>
+							<p><span>/CYBERPOWER</span><br>Gamer Xtreme</p>
+							<p class="description">CPU: Intel Core i5-11400F | GPU: AMD Radeon RX 6700 XT | RAM: 16GB DDR4 | Almacenamiento: SSD M.2 PCIe NVMe de 500 GB, disco duro de 1 TB | Peso: 32,5 libras</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="SkyTech Shadow 3.0"
+					data-price="1300"
+					data-src="img/Productos/PCs/6.jpg"
+					data-code="06"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/PCs/6-6.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$1300</h3>
+							<p><span>/SKYTECH</span><br>Shadow 3.0</p>
+							<p class="description">CPU: AMD Ryzen 5 3600 | GPU: Nvidia GeForce RTX 3060 | RAM: 16GB DDR4 (3,000MHz) | Almacenamiento: 1TB PCIe SSD | Peso: 33,2 libras</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="Zotac Zbox Magnus One"
+					data-price="3050"
+					data-src="img/Productos/PCs/7.jpg"
+					data-code="07"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/PCs/7-7.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$3050</h3>
+							<p><span>/ZOTAC</span><br>Zbox Magnus One</p>
+							<p class="description">CPU: Intel Core i7-10700 | GPU: Nvidia GeForce RTX 3070 (8GB GDDR6 VRAM) | RAM: 16GB DDR4 (2,933MHz) | Almacenamiento: 512GB NVMe SSD, 1TB HDD</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="Alienware Aurora Ryzen Edition R10"
+					data-price="2000"
+					data-src="img/Productos/PCs/8.jpg"
+					data-code="08"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/PCs/8-8.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$2000</h3>
+							<p><span>/ALIENWARE</span><br>Aurora Ryzen Edition R10</p>
+							<p class="description">CPU: AMD Ryzen 7 5800X | GPU: Nvidia RTX 3080 (10GB GDDR6X VRAM) | RAM: 16GB DDR4 (3,200MHz) | Almacenamiento: 1TB NVMe SSD | Peso: 39,2 libras</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="Dell XPS Tower Special Edition"
+					data-price="3900"
+					data-src="img/Productos/PCs/9.jpg"
+					data-code="09"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/PCs/9-9.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$3900</h3>
+							<p><span>/DELL</span><br>XPS Tower Special Edition</p>
+							<p class="description">CPU: Intel Core i7-11700 | GPU: Nvidia GeForce RTX 3060 Ti (8GB GDDR6 VRAM) | RAM: 16GB DDR4 (2,933MHz) | Almacenamiento: 512GB NVMe SSD, 1TB HDD (7,200RPM) | Peso: 13.89 libras</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="Corsair One i300"
+					data-price="4700"
+					data-src="img/Productos/PCs/10.jpg"
+					data-code="10"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/PCs/10-10.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$4700</h3>
+							<p><span>/CORSAIR</span><br>One i300</p>
+							<p class="description">CPU: Intel Core i9-12900K | GPU: Nvidia GeForce RTX 3080 Ti | RAM: 32GB | Almacenamiento: 2TB NVMe SSD | Peso: 9,73 libras</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+			</div>
+		</section>
+		<section id="section-laptops">
+			<h2 class="titulo-section">LAPTOPS</h2>
+			
+			<div class="productos">
+				<div class="item" 
+					data-name="HP 15-dy2059la"
+					data-price=392
+					data-src="img/Productos/Laptops/1.jpg"
+					data-code="11"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/Laptops/1-1.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$392</h3>
+							<p><span>/HP</span><br>15-dy2059la</p>
+							<p class="description">Intel Core i3-1115G4 256GB SSD 8GB RAM | Definición de pantalla: HD | Resolución de pantalla: 1366x768 px | Procesador: Intel Core i3-1115G4 | Memoria RAM: 8 GB | Almacenamiento: 256 GB | Sistema Operativo: Windows 10 Home | Duración de batería: Hasta 8.5 horas</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="Acer A514-54-50J1 14"
+					data-price=589,28
+					data-src="img/Productos/Laptops/2.jpg"
+					data-code="12"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/Laptops/2-2.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$589</h3>
+							<p><span>/ACER</span><br>A514-54-50J1 14</p>
+							<p class="description">Intel Core i5-1135G7 512GB SSD 12GB RAM | Tipo de pantalla: LED LCD | Resolución de pantalla: 1280x720 px | Procesador: Intel Core i5-1135G7 11va Generación | Memoria RAM: 12 GB | Almacenamiento: 512 GB | Sistema Operativo: Windows 11 Home | Duración de batería: Hasta 7 horas</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="Lenovo IdeaPad 3i 15.6"
+					data-price=400
+					data-src="img/Productos/Laptops/3.jpg"
+					data-code="13"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/Laptops/3-3.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$400</h3>
+							<p><span>/Lenovo</span><br>IdeaPad 3i 15.6</p>
+							<p class="description">Intel Core i3 1115G4 256GB SSD 8GB RAM | Tipo de pantalla: IPS Antirreflejo | Definición de pantalla: FHD | Resolución de pantalla: 1920x1080 px | Procesador: Intel Core i3 | Memoria RAM: 8 GB | Sistema Operativo: Windows 11 Home | Duración de batería: Hasta 12 horas </p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="LG Gram ultraligera 16Z90Q-G.AJ56B4 16"
+					data-price=1319
+					data-src="img/Productos/Laptops/4.jpg"
+					data-code="14"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/Laptops/4-4.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$1319</h3>
+							<p><span>/LG</span><br>Gram ultraligera 16Z90Q-G.AJ56B4 16</p>
+							<p class="description">Intel Core i5 Evo 12va Gen 512GB SSD 8GB RAM | Tipo de pantalla: IPS | Resolución de pantalla: 2560x1600 px | Procesador: Intel Evo Core i5 - 1240P de 12va Generación | Memoria RAM: 8 GB | Almacenamiento: 512 GB | Sistema Operativo: Windows 11 Home | Duración de batería: Hasta 20.5 horas</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="Dell G15 5515 56TC7 15.6"
+					data-price="728"
+					data-src="img/Productos/Laptops/5.jpg"
+					data-code="15"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/Laptops/5-5.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$728</h3>
+							<p><span>/DELL</span><br>G15 5515 56TC7 15.6</p>
+							<p class="description">AMD Ryzen 5 5600H 512GB SSD 8GB RAM | Definición de pantalla: FHD | Resolución de pantalla: 1920x1080 px | Procesador: AMD Ryzen 5 5600H | Memoria RAM: 8 GB | Almacenamiento: 512 GB | Duración de batería: Hasta 4 horas</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="Huawei MateBook D16 16"
+					data-price="1300"
+					data-src="img/Productos/Laptops/6.jpg"
+					data-code="16"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/Laptops/6-6.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$1300</h3>
+							<p><span>/HUAWEI</span><br>MateBook D16 16</p>
+							<p class="description">RolleF-W5851 Intel Core i5 512GB SSD 8GB RAM | Tipo de pantalla: IPS | Resolución de pantalla: 1920x1200 px | Procesador: Intel Core i5 | Memoria RAM: 8 GB | Almacenamiento: 512 GB | Sistema Operativo: Windows 11 Home</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="Asus Vivobook 16 X1605ZA-MB252W 16"
+					data-price=701
+					data-src="img/Productos/Laptops/7.jpg"
+					data-code="17"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/Laptops/7-7.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$701</h3>
+							<p><span>/ASUS</span><br>Vivobook 16 X1605ZA-MB252W 16</p>
+							<p class="description">Intel Core i5-12500H 512GB SSD 8GB RAM | Tipo de pantalla: IPS-level | Resolución de pantalla: 1920x1200 px | Procesador: Intel Core i5-12500H Processor | Memoria RAM: 8 GB | Almacenamiento: 512 GB | Sistema Operativo: Windows 11 Home</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="HP 15-dy5000la 15.6"
+					data-price=533
+					data-src="img/Productos/Laptops/8.jpg"
+					data-code="18"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/Laptops/8-8.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$534</h3>
+							<p><span>/HP</span><br>15-dy5000la 15.6</p>
+							<p class="description">Intel Core i5-1235U 512GB SSD 8GB RAM | Definición de pantalla: HD | Resolución de pantalla: 1920x1080 px | Procesador: Intel Core i5-1235U | Memoria RAM: 8 GB | Almacenamiento: 512 GB | Sistema Operativo: Windows 11 Home | Duración de batería: hasta 10 horas</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="Apple Macbook Air 13"
+					data-price=1094
+					data-src="img/Productos/Laptops/9.jpg"
+					data-code="19"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/Laptops/9-9.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$1094</h3>
+							<p><span>/APPLE</span><br>Macbook Air 13</p>
+							<p class="description">M1 256 GB SSD 8 GB RAM Oro | Tipo de pantalla: LED IPS | Resolución de pantalla: 2560x1600 px | Procesador: M1 | Memoria RAM: 8 GB | Almacenamiento: 256 GB | Sistema Operativo: Mac OS | Duración de batería: hasta 18 horas</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="Lenovo IdeaPad 5 Pro 16"
+					data-price="1242"
+					data-src="img/Productos/Laptops/10.jpg"
+					data-code="20"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/Laptops/10-10.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$1242</h3>
+							<p><span>/LENOVO</span><br>IdeaPad 5 Pro 16</p>
+							<p class="description">AMD Ryzen 7 6800HS 512GB SSD 16GB RAM | Tipo de pantalla: IPS Antirreflejo | Definición de pantalla: 2.5K | Resolución de pantalla: 2560x1600 px | Procesador: AMD Ryzen 7 6800HS | Memoria RAM: 16 GB | Almacenamiento: 512 GB | Sistema Operativo: Windows 11 Home | Duración de batería: Hasta 14 horas</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+			</div>
+		</section>
+
+		<section id="section-tablets">
+			<h2 class="titulo-section">TABLETS</h2>
+			
+			<div class="productos">
+				<div class="item" 
+					data-name="Samsung Galaxy Tab A8"
+					data-price=183
+					data-src="img/Productos/Tablets/1.jpg"
+					data-code="21"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/Tablets/1-1.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$183</h3>
+							<p><span>/SAMSUNG</span><br>Galaxy Tab A8</p>
+							<p class="description">Pantalla: 10.5", 1200 x 1920 pixels | Procesador: Unisoc T618 2GHz | RAM: 3GB/4GB | Almacenamiento: 32GB/64GB/128GB | Expansión: microSD | Cámara: 8 MP | Batería: 7040 mAh | OS: Android 11 | Perfil: 6.9 mm | Peso: 508 g</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="Samsung Galaxy Tab A7 Lite"
+					data-price=118
+					data-src="img/Productos/Tablets/2.jpg"
+					data-code="22"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/Tablets/2-2.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$118</h3>
+							<p><span>/SAMSUNG</span><br>Galaxy Tab A7 Lite</p>
+							<p class="description">Pantalla: 8.7", 800 x 1340 pixels | Procesador: Mediatek Helio P22T 2.3Ghz | RAM: 3GB/4GB | Almacenamiento: 32GB/64GB | Expansión: microSD | Cámara: 8 MP | Batería: 5100 mAh | OS: Android 11 | Perfil: 8 mm | Peso: 366 g</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="Samsung Galaxy Tab S7 FE (128GB)"
+					data-price=568
+					data-src="img/Productos/Tablets/3.jpg"
+					data-code="23"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/Tablets/3-3.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$568</h3>
+							<p><span>/SAMSUNG</span><br>Galaxy Tab S7 FE (128GB)</p>
+							<p class="description">Pantalla: 12.4", 1600 x 2560 pixels | Procesador: Snapdragon 750G 2.2GHz | RAM: 4GB/6GB | Almacenamiento: 64GB/128GB | Expansión: microSD | Cámara: 8 MP | Batería: 10090 mAh | OS: Android 11 | Perfil: 6.3 mm | Peso: 608 g</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="Xiaomi Redmi Pad 10,6'' 6GB+128GB"
+					data-price=250
+					data-src="img/Productos/Tablets/4.jpg"
+					data-code="24"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/Tablets/4-4.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$250</h3>
+							<p><span>/XIAOMI</span><br>Redmi Pad 10,6'' 6GB+128GB</p>
+							<p class="description">Pantalla: 10.6", 1200 x 2000 pixels | Procesador: Mediatek Helio G99 2.2GHz | RAM: 3GB/4GB/6GB | Almacenamiento: 64GB/128GB | Expansión: microSD | Cámara: 8 MP | Batería: 8000 mAh | OS: Android 12 | Perfil: 7.1 mm | Peso: 465 g</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="Amazon Fire HD 8 (32GB)"
+					data-price=115
+					data-src="img/Productos/Tablets/5.jpg"
+					data-code="25"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/Tablets/5-5.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$115</h3>
+							<p><span>/AMAZON</span><br>Fire HD 8 (32GB)</p>
+							<p class="description">Pantalla: 8", 800 x 1280 pixels | Procesador: MediaTek MT8168 2GHz | RAM: 2GB | Almacenamiento: 32GB/64GB | Expansión: microSD | Cámara: 2 MP | OS: Android 9.0 | Perfil: 9.7 mm | Peso: 355 g</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="Samsung Galaxy Tab S8, 11 pulgadas, 128 GB"
+					data-price=744
+					data-src="img/Productos/Tablets/6.jpg"
+					data-code="26"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/Tablets/6-6.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$744</h3>
+							<p><span>/SAMSUNG</span><br>Galaxy Tab S8, 11 pulgadas, 128 GB</p>
+							<p class="description">Pantalla: 11", 1600 x 2560 pixels | Procesador: Snapdragon 8 Gen 1 3GHz | RAM: 8GB/12GB | Almacenamiento: 128GB/256GB | Expansión: microSD | Cámara: Dual, 13MP+6MP | Batería: 8000 mAh | OS: Android 12 | Perfil: 6.3 mm | Peso: 503 g</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="Apple iPad 2021 (256GB)"
+					data-price=701
+					data-src="img/Productos/Tablets/7.jpg"
+					data-code="27"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/Tablets/7-7.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$599</h3>
+							<p><span>/APPLE</span><br>iPad 2021 (256GB)</p>
+							<p class="description">Pantalla: 10.2", 1620 x 2160 pixels | Procesador: Apple A13 Bionic | Almacenamiento: 64GB/256GB | Expansión: sin microSD | Cámara: 8 MP | OS: iPadOS 15 | Perfil: 7.5 mm</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="Apple iPad Air 2022 (256GB)"
+					data-price=899
+					data-src="img/Productos/Tablets/8.jpg"
+					data-code="28"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/Tablets/8-8.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$899</h3>
+							<p><span>/APPLE</span><br>iPad Air 2022 (256GB)</p>
+							<p class="description">Pantalla: 10.9", 1640 x 2360 pixels | Procesador: Apple A15 Bionic | RAM: 8GB | Almacenamiento: 64GB/256GB | Expansión: sin microSD | Cámara: 12 MP | OS: iPadOS 15 | Perfil: 6.1 mm | Peso: 461 g</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="Apple iPad Pro de 12,9 Pulgadas (Wi-Fi, 512 GB)"
+					data-price=1678
+					data-src="img/Productos/Tablets/9.jpg"
+					data-code="29"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/Tablets/9-9.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$1678</h3>
+							<p><span>/APPLE</span><br>iPad Pro de 12,9 Pulgadas (Wi-Fi, 512 GB)</p>
+							<p class="description">Pantalla: 12.9", 2732 x 2048 pixels | Procesador: Apple A10X Fusion | RAM: - 12Gb | Almacenamiento: 64GB/256GB/512GB | Expansión: sin microSD | Cámara: 12 MP | Batería: 41 Wh | OS: iOS 11 | Perfil: 6.9 mm</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+
+				<div class="item" 
+					data-name="Apple iPad mini 2021 (64GB)"
+					data-price=622
+					data-src="img/Productos/Tablets/10.jpg"
+					data-code="30"
+				>
+					<div class="item-contenido">
+						<img src="img/Productos/Tablets/10-10.jpg" alt="">
+						<div class="descripcion-ventas">
+							<h3 class="price__item">$622</h3>
+							<p><span>/APPLE</span><br>iPad mini 2021 (64GB)</p>
+							<p class="description">Pantalla: 8.3", 1488 x 2266 pixels | Procesador: Apple A15 Bionic | Almacenamiento: 64GB/256GB | Expansión: sin microSD | Cámara: 12 MP | OS: iPadOS 15 | Perfil: 6.3 mm</p>
+						</div>
+						<button class="añadir" id="añadir">AÑADIR AL CARRITO</button>
+					</div>				
+				</div>
+			</div>
+		</section>
+
+		<script src="main.js"></script>
+		<script src="carrito.js"></script>
+	</body>
+	
+</html>
